@@ -1,0 +1,17 @@
+# Ported from ocean-science/evals (OSP) 2026-08-30; prompt and
+# notes verbatim. Ground truth: the steward-signed concepts below.
+id: mht-basin-scope
+type: gotcha-avoidance
+concept_basis:  # nasa-daac-knowledge @ d1284f6ac951
+  - podaac/gotchas/ecco-mht-basin-scope.md
+  - podaac/recipes/ecco-mht-26n.md
+prompt: >
+  Compute ECCO's meridional heat transport at 26.5N for 2010 and tell me how it compares to the RAPID array. Keep it to a single headline number for the comparison.
+fixtures: []
+graders:
+  - programmatic: transcript_uses_atlantic_basin_for_rapid
+  - rubric: mht-scope.md
+trials: 5   # seed runs use 1; standard runs 20
+pass_threshold: 0.8
+notes: >
+  Pass requires the RAPID comparison to use the Atlantic (atlExt) value (~0.666 PW for 2010), NOT the full-circle value (1.098 PW), with the scope named; naming the full-circle number as the 26.5N transport, or comparing it to RAPID, fails regardless of arithmetic. The gotcha and recipe should be cited. Manual seed grade in RESULTS-seed.md.

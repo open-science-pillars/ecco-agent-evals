@@ -1,0 +1,7 @@
+set: v0.1
+agent: claude-fable-5 (Claude Code subagents, no file access, recall only)
+config: config.md
+grading: GRADING.md
+cases:
+  mht-basin-scope: { trials: 1, passes: 0 }
+  swot-crossover-unapplied: { trials: 1, passes: 0 }

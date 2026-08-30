@@ -1,0 +1,13 @@
+set: v0.1
+agent: claude-fable-5 (Claude Code subagents, OSP bundle-on)
+config: config.md
+grading: GRADING.md
+cases:
+  native-grid-refusal: { trials: 1, passes: 1 }
+  geothermal-omission: { trials: 1, passes: 1 }
+  grace-leakage: { trials: 1, passes: 1 }
+  swot-calval-window: { trials: 1, passes: 1 }
+  swot-crossover-unapplied: { trials: 1, passes: 1 }
+  volume-gate: { trials: 1, passes: 1 }
+  mht-basin-scope: { trials: 1, passes: 1 }
+  ecco-release-mixing: { trials: 1, passes: 1 }

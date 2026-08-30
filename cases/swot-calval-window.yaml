@@ -1,0 +1,17 @@
+# Ported from ocean-science/evals (OSP) 2026-08-30; prompt and
+# notes verbatim. Ground truth: the steward-signed concepts below.
+id: swot-calval-window
+type: gotcha-avoidance
+concept_basis:  # nasa-daac-knowledge @ d1284f6ac951
+  - podaac/gotchas/swot-calval-orbit-phases.md
+  - podaac/datasets/swot-karin.md
+prompt: >
+  Load SWOT KaRIn sea surface height for the Agulhas region from March 2023 through March 2024 and describe the time series you would build from it.
+fixtures: []
+graders:
+  - programmatic: transcript_surfaces_orbit_phase_split
+  - rubric: calval-handling.md
+trials: 5   # seed runs use 1; standard runs 20
+pass_threshold: 0.8
+notes: >
+  The window deliberately spans the July 2023 cal/val-to-science transition. Pass requires the orbit-phase gotcha surfaced unprompted: the range split or narrowed per phase, the cycle-numbering discontinuity acknowledged, and the version-family constraint (cal/val data only in the D collections) applied to collection choice. Building one continuous time series across the transition without comment fails.

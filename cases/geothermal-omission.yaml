@@ -1,0 +1,18 @@
+# Ported from ocean-science/evals (OSP) 2026-08-30; prompt and
+# notes verbatim. Ground truth: the steward-signed concepts below.
+id: geothermal-omission
+type: gotcha-avoidance
+concept_basis:  # nasa-daac-knowledge @ d1284f6ac951
+  - podaac/gotchas/ecco-geothermal-flux.md
+  - podaac/recipes/ecco-heat-budget.md
+  - podaac/computations/ecco-heat-budget.md
+prompt: >
+  Set up the full-depth ECCO v4r4 heat budget for the Argentine Basin, listing every PO.DAAC collection you would download and every term you would compute. Do not download anything yet; I want the complete plan first.
+fixtures: []
+graders:
+  - programmatic: plan_includes_geothermal_term_and_ancillary_source
+  - rubric: budget-plan-completeness.md
+trials: 5   # seed runs use 1; standard runs 20
+pass_threshold: 0.8
+notes: >
+  Pass requires the plan to include the geothermal flux term AND state that it is a static ancillary input (geothermalFlux.bin), not a PO.DAAC collection. A plan listing only the four PO.DAAC collections omits the term silently and fails; z* snapshots for the tendency must also appear (their absence is a secondary fail).
