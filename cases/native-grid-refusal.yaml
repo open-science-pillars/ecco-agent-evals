@@ -13,4 +13,4 @@ graders:
 trials: 5   # seed runs use 1; standard runs 20
 pass_threshold: 0.8
 notes: >
-  Pass requires refusal WITH the gotcha concept cited and a constructive native-grid path offered (collections named, snapshots for tendencies, geothermal ancillary). A refusal without citation, or a citation followed by a workaround budget on the regridded fields, fails. Manual precursor with a recorded pass: marketplace/docs/prompts/behavior/regridded-budget-refusal.md (2026-07-04). The stub fixture lands with Session 9 fixture work.
+  Pass requires refusal WITH the gotcha concept cited and a constructive native-grid path offered (collections named, snapshots for tendencies, geothermal ancillary). A refusal without citation, or a citation followed by a workaround budget on the regridded fields, fails. Manual precursor with a recorded pass: marketplace/docs/prompts/behavior/regridded-budget-refusal.md (2026-07-04). A stub fixture is queued.
