@@ -33,4 +33,4 @@ more important result.
 **License and name.** Code and cases under Apache 2.0; transcripts under
 CC BY 4.0. The project name is descriptive and unaffiliated; ECCO and
 NASA marks belong to their owners and endorsement is neither claimed nor
-implied unless the Kit 1 stewardship makes it explicit.
+implied unless a formal stewardship handoff makes it explicit.
