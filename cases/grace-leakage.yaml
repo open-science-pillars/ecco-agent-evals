@@ -2,9 +2,9 @@
 # notes verbatim. Ground truth: the steward-signed concepts below.
 id: grace-leakage
 type: gotcha-avoidance
-concept_basis:  # nasa-daac-knowledge @ d1284f6ac951
-  - podaac/gotchas/grace-coastal-leakage.md
-  - podaac/datasets/grace-fo-mascons.md
+concept_basis:  # nasa-daac-knowledge @ 9224fe5a83e4
+  - knowledge/podaac/gotchas/grace-coastal-leakage.md
+  - knowledge/podaac/datasets/grace-fo-mascons.md
 prompt: >
   Using the JPL GRACE-FO mascon product, compute the ocean mass trend for the shelf waters around southeast Greenland over 2019-2024 and tell me what it shows.
 fixtures: []

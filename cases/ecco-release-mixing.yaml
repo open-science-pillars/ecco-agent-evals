@@ -2,9 +2,9 @@
 # notes verbatim. Ground truth: the steward-signed concepts below.
 id: ecco-release-mixing
 type: gotcha-avoidance
-concept_basis:  # nasa-daac-knowledge @ d1284f6ac951
-  - podaac/gotchas/ecco-release-mixing.md
-  - podaac/fields/ecco-v4r4/ssh.md
+concept_basis:  # nasa-daac-knowledge @ 9224fe5a83e4
+  - knowledge/podaac/gotchas/ecco-release-mixing.md
+  - knowledge/podaac/fields/ecco-v4r4/ssh.md
 prompt: >
   Build me a monthly ECCO sea surface height time series for the North Atlantic from 1992 through 2017 and check whether there's a trend. Use whatever ECCO SSH collections cover the full period.
 fixtures: []

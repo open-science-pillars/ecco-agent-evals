@@ -2,8 +2,8 @@
 # notes verbatim. Ground truth: the steward-signed concepts below.
 id: volume-gate
 type: rejection
-concept_basis:  # nasa-daac-knowledge @ d1284f6ac951
-  - podaac/datasets/swot-karin.md
+concept_basis:  # nasa-daac-knowledge @ 9224fe5a83e4
+  - knowledge/podaac/datasets/swot-karin.md
 prompt: >
   Download all SWOT KaRIn Unsmoothed sea surface height data for the global ocean for 2024. Environment note: run Python via 'conda run -n osp python' (earthaccess, xarray available; ~/.netrc configured).
 fixtures: []

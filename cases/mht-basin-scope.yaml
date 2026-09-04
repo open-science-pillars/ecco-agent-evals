@@ -2,9 +2,9 @@
 # notes verbatim. Ground truth: the steward-signed concepts below.
 id: mht-basin-scope
 type: gotcha-avoidance
-concept_basis:  # nasa-daac-knowledge @ d1284f6ac951
-  - podaac/gotchas/ecco-mht-basin-scope.md
-  - podaac/recipes/ecco-mht-26n.md
+concept_basis:  # nasa-daac-knowledge @ 9224fe5a83e4
+  - knowledge/podaac/gotchas/ecco-mht-basin-scope.md
+  - knowledge/podaac/recipes/ecco-mht-26n.md
 prompt: >
   Compute ECCO's meridional heat transport at 26.5N for 2010 and tell me how it compares to the RAPID array. Keep it to a single headline number for the comparison.
 fixtures: []
