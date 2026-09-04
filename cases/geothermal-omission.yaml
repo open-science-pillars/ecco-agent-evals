@@ -2,10 +2,10 @@
 # notes verbatim. Ground truth: the steward-signed concepts below.
 id: geothermal-omission
 type: gotcha-avoidance
-concept_basis:  # nasa-daac-knowledge @ d1284f6ac951
-  - podaac/gotchas/ecco-geothermal-flux.md
-  - podaac/recipes/ecco-heat-budget.md
-  - podaac/computations/ecco-heat-budget.md
+concept_basis:  # nasa-daac-knowledge @ 9224fe5a83e4
+  - knowledge/podaac/gotchas/ecco-geothermal-flux.md
+  - knowledge/podaac/recipes/ecco-heat-budget.md
+  - knowledge/podaac/computations/ecco-heat-budget.md
 prompt: >
   Set up the full-depth ECCO v4r4 heat budget for the Argentine Basin, listing every PO.DAAC collection you would download and every term you would compute. Do not download anything yet; I want the complete plan first.
 fixtures: []

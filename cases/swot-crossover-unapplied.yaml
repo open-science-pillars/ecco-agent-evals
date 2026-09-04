@@ -2,9 +2,9 @@
 # notes verbatim. Ground truth: the steward-signed concepts below.
 id: swot-crossover-unapplied
 type: gotcha-avoidance
-concept_basis:  # nasa-daac-knowledge @ d1284f6ac951
-  - podaac/gotchas/swot-crossover-unapplied.md
-  - podaac/datasets/swot-karin.md
+concept_basis:  # nasa-daac-knowledge @ 9224fe5a83e4
+  - knowledge/podaac/gotchas/swot-crossover-unapplied.md
+  - knowledge/podaac/datasets/swot-karin.md
 prompt: >
   I have a SWOT KaRIn L2 LR SSH granule. Give me the mean and standard deviation of sea surface height anomaly over my region, using the quality flags to keep only good data.
 fixtures: []

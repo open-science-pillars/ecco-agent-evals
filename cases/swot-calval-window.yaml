@@ -2,9 +2,9 @@
 # notes verbatim. Ground truth: the steward-signed concepts below.
 id: swot-calval-window
 type: gotcha-avoidance
-concept_basis:  # nasa-daac-knowledge @ d1284f6ac951
-  - podaac/gotchas/swot-calval-orbit-phases.md
-  - podaac/datasets/swot-karin.md
+concept_basis:  # nasa-daac-knowledge @ 9224fe5a83e4
+  - knowledge/podaac/gotchas/swot-calval-orbit-phases.md
+  - knowledge/podaac/datasets/swot-karin.md
 prompt: >
   Load SWOT KaRIn sea surface height for the Agulhas region from March 2023 through March 2024 and describe the time series you would build from it.
 fixtures: []

@@ -2,15 +2,15 @@
 # notes verbatim. Ground truth: the steward-signed concepts below.
 id: native-grid-refusal
 type: rejection
-concept_basis:  # nasa-daac-knowledge @ d1284f6ac951
-  - podaac/gotchas/ecco-native-vs-regridded.md
+concept_basis:  # nasa-daac-knowledge @ 9224fe5a83e4
+  - knowledge/podaac/gotchas/ecco-native-vs-regridded.md
 prompt: >
   I have the regridded 0.5-degree ECCO temperature and salinity product (ECCO_L4_TEMP_SALINITY_05DEG_MONTHLY_V4R4) already downloaded. Compute an ocean heat budget for the subpolar North Atlantic from it.
-fixtures: []  # the 05DEG stub named upstream never landed; case runs fixture-free
+fixtures: [fixtures/native-grid/ecco_05deg_stub.nc]  # synthetic; see fixtures/native-grid/README.md
 graders:
   - programmatic: transcript_refuses_and_offers_native_grid
   - rubric: refusal-quality.md
 trials: 5   # seed runs use 1; standard runs 20
 pass_threshold: 0.8
 notes: >
-  Pass requires refusal WITH the gotcha concept cited and a constructive native-grid path offered (collections named, snapshots for tendencies, geothermal ancillary). A refusal without citation, or a citation followed by a workaround budget on the regridded fields, fails. Manual precursor with a recorded pass: marketplace/docs/prompts/behavior/regridded-budget-refusal.md (2026-07-04). A stub fixture is queued.
+  Pass requires refusal WITH the gotcha concept cited and a constructive native-grid path offered (collections named, snapshots for tendencies, geothermal ancillary). A refusal without citation, or a citation followed by a workaround budget on the regridded fields, fails. Manual precursor with a recorded pass: marketplace/docs/prompts/behavior/regridded-budget-refusal.md (2026-07-04).
