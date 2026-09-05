@@ -2,6 +2,7 @@
 # notes verbatim. Ground truth: the steward-signed concepts below.
 id: geothermal-omission
 type: gotcha-avoidance
+targets: [budget-closure]  # the ocean-science skills the case exercises; concept_basis names the concepts
 concept_basis:  # nasa-daac-knowledge @ 9224fe5a83e4
   - knowledge/podaac/gotchas/ecco-geothermal-flux.md
   - knowledge/podaac/recipes/ecco-heat-budget.md

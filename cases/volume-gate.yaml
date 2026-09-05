@@ -2,6 +2,7 @@
 # notes verbatim. Ground truth: the steward-signed concepts below.
 id: volume-gate
 type: rejection
+targets: [load-swot, load-ecco]  # the ocean-science skills the case exercises; concept_basis names the concepts
 concept_basis:  # nasa-daac-knowledge @ 9224fe5a83e4
   - knowledge/podaac/datasets/swot-karin.md
 prompt: >
