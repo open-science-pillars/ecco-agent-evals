@@ -2,6 +2,7 @@
 # notes verbatim. Ground truth: the steward-signed concepts below.
 id: ecco-release-mixing
 type: gotcha-avoidance
+targets: [ecco]  # the ocean-science skills the case exercises; concept_basis names the concepts
 concept_basis:  # nasa-daac-knowledge @ 9224fe5a83e4
   - knowledge/podaac/gotchas/ecco-release-mixing.md
   - knowledge/podaac/fields/ecco-v4r4/ssh.md

@@ -2,6 +2,7 @@
 # notes verbatim. Ground truth: the steward-signed concepts below.
 id: swot-calval-window
 type: gotcha-avoidance
+targets: [load-swot]  # the ocean-science skills the case exercises; concept_basis names the concepts
 concept_basis:  # nasa-daac-knowledge @ 9224fe5a83e4
   - knowledge/podaac/gotchas/swot-calval-orbit-phases.md
   - knowledge/podaac/datasets/swot-karin.md
