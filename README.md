@@ -5,7 +5,8 @@ realistic ocean-data tasks that test whether an AI agent avoids the
 documented ECCO traps and produces numbers inside recorded tolerances:
 interpolated-grid budgets, missing snapshot bookends, the dropped
 geothermal term, mixed releases, unapplied SWOT crossover calibration,
-basin-scope errors against RAPID, and ungated terabyte downloads.
+basin-scope errors against RAPID, ungated terabyte downloads, and a
+regional budget certified by an identity that holds for any array.
 
 Every case cites the steward-signed knowledge concept it derives from,
 by path and commit (`concept_basis` in each case header), so the
