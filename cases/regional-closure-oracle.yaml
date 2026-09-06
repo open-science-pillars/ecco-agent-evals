@@ -1,0 +1,21 @@
+# Drafted 2026-09-05 as a candidate beside its dead-end while that concept
+# was a draft; moved into the case set 2026-09-06 in the change that
+# records the concept's signature (status stable, load_bearing high,
+# eval_case naming this id). Ground truth: the steward-signed concepts
+# below; the regional computation owns the pass condition.
+id: regional-closure-oracle
+type: methodology
+targets: [budget-closure]  # the ocean-science skill the case exercises; concept_basis names the concepts
+concept_basis:  # nasa-daac-knowledge @ f4325f375748
+  - knowledge/podaac/dead-ends/divergence-identity-as-budget-oracle.md
+  - knowledge/podaac/computations/ecco-regional-heat-budget.md
+prompt: >
+  I have computed the ECCO v4r4 heat budget for a closed control volume in the Argentine Basin, every term on the native grid from the standard PO.DAAC collections, and I have no independent reference for this box. Before I use the numbers, tell me how I should check that the regional budget actually closes and what evidence would convince you it does. Do not download or compute anything yet; I want the validation plan first.
+fixtures: []
+graders:
+  - programmatic: transcript_rejects_divergence_identity_as_closure_evidence
+  - rubric: regional-closure-evidence.md
+trials: 5   # seed runs use 1; standard runs 20
+pass_threshold: 0.8
+notes: >
+  Pass requires evidence that can fail: the box residual compared against both bars of the attested regional computation (the absolute per-volume bar and the residual relative to the largest regional term; one bar alone is not a criterion), with the terms drawn from independent collections (tendency from the snapshots, boundary transport read as raw face fluxes at the rim, forcing from the surface flux collection plus geothermal at bottom wet cells), and a mutation control (a deliberately corrupted term, such as the rim shifted one cell or geothermal omitted, must fail a bar). A plan that proposes summing the pointwise convergence over the box and comparing it to the rim flux as the closure evidence fails, unless the transcript names that agreement as an algebraic identity that holds for any array and does not count it as evidence. A plan whose only check is one that cannot fail, or that omits geothermal from the forcing, also fails.

@@ -5,7 +5,8 @@ realistic ocean-data tasks that test whether an AI agent avoids the
 documented ECCO traps and produces numbers inside recorded tolerances:
 interpolated-grid budgets, missing snapshot bookends, the dropped
 geothermal term, mixed releases, unapplied SWOT crossover calibration,
-basin-scope errors against RAPID, and ungated terabyte downloads.
+basin-scope errors against RAPID, ungated terabyte downloads, and a
+regional budget certified by an identity that holds for any array.
 
 Every case cites the steward-signed knowledge concept it derives from,
 by path and commit (`concept_basis` in each case header), so the
@@ -31,7 +32,12 @@ case header carries two declarations:
 Edit cases here, never anywhere else. A case whose underlying concept
 changes status is re-versioned or retired with it, and a plugin skill
 renamed or retired updates the `targets` that named it in the same
-change. The case-level regression fixture for a plugin's own artifact
+change. `cases/candidates/` holds a case drafted before its concept is
+signed (a dead-end or field-state proposed at load_bearing high enters
+its bundle at medium until the case that measures it exists); a
+candidate is not in the case set, is not graded, is cited by no
+results entry, and moves up to `cases/` in the change that records the
+concept's signature and its `eval_case`. The case-level regression fixture for a plugin's own artifact
 (a briefing's receipt values, for example) lives with that plugin
 under its `verification/fixtures/`, because it guards the plugin's
 output rather than a case here.
