@@ -1,0 +1,9 @@
+# Ownership by team (ADR A, decision 10; the registry is osp/teams.yaml in
+# build-kit). One person occupies every team during the interim solo period;
+# accepting a maintainer is a team membership change, not an edit here.
+* @open-science-pillars/foundation-maintainers
+
+# Each product's set is owned by its sphere's maintainers, who accept cases
+# derived from that sphere's signed concepts; scoring and the gate stay with
+# the foundation team.
+/ecco/            @open-science-pillars/hydrosphere-maintainers
