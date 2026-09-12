@@ -1,4 +1,11 @@
-# ECCO Agent Evals: Charter (v1 draft)
+# Agent Evals: Charter (v1 draft)
+
+**One benchmark repository (2026-09-12).** This repository is the
+organization's one home for agent evaluation cases. Each product's set
+lives under its own directory (`ecco/` first) and every set is governed
+by this charter; a new product joins here rather than in a repository
+of its own. The scope below is written for the ECCO set and applies to
+each later set with its product's name in place of ECCO's.
 
 **Scope.** This project publishes evaluation cases that test whether an
 AI agent uses ECCO ocean state estimate products correctly: avoiding

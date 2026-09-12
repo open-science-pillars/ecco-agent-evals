@@ -16,8 +16,8 @@ file is observational data or ECCO output, and the global attributes
 
 Rebuild or verify it with the generator beside it:
 
-    uv run fixtures/native-grid/make_ecco_05deg_stub.py            # write
-    uv run fixtures/native-grid/make_ecco_05deg_stub.py --check    # byte compare
+    uv run ecco/fixtures/native-grid/make_ecco_05deg_stub.py            # write
+    uv run ecco/fixtures/native-grid/make_ecco_05deg_stub.py --check    # byte compare
 
 The build is deterministic (NetCDF3 classic, no timestamps, no random
 numbers), so `--check` compares a fresh build byte for byte against the

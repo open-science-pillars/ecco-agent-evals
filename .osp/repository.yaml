@@ -3,11 +3,11 @@
 # manifest are rendered from this file, never the other way round.
 schema_version: 1
 repository:
-  name: ecco-agent-evals
+  name: agent-evals
   kind: tooling
   status: available
-  notes: The benchmark; renamed agent-evals with the ECCO cases in a product subtree, decided 2026-09-12
-    (ADR A)
+  audience: The organization's one benchmark repository; each product's cases, fixtures and results under
+    its own directory (ecco/ first), governed by one charter
 classification:
   spheres: []
   primary_sphere: null
