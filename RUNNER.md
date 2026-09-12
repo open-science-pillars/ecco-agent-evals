@@ -12,11 +12,11 @@ and the standing instructions. Results are only meaningful relative to
 the disclosed configuration.
 
 **Case-tree exclusion (mandatory).** The agent's searchable file tree
-and retrieval sources MUST NOT include this repository's `cases/`
+and retrieval sources MUST NOT include this repository's `<product>/cases/`
 directory or any copy of the case definitions. In OSP's own seed
 baseline, agents given a broad local tree discovered their case files
 mid-run (disclosed in those transcripts); the layout rule exists so that
-cannot happen. Fixtures under `fixtures/` MAY be exposed when a case
+cannot happen. Fixtures under `<product>/fixtures/` MAY be exposed when a case
 names them.
 
 **Query policy.** Unless a case says otherwise: read-only metadata
@@ -37,10 +37,10 @@ credentials beyond a standard Earthdata login.
 
 ## The entry you submit
 
-One directory under `results/`, by PR with DCO sign-off:
+One directory under the product's `results/` (`ecco/results/` for the ECCO set), by PR with DCO sign-off:
 
 ```
-results/<date>-<yourname>-<agent>/
+ecco/results/<date>-<yourname>-<agent>/
   config.md        the full configuration disclosure
   results.yaml     set, agent, cases: {id: {trials, passes}}
   GRADING.md       grader, per-case evidence lines, anomalies disclosed

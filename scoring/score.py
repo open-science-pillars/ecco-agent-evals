@@ -5,7 +5,7 @@
 # ///
 """Score a results entry: per-case pass fraction with a Wilson 95% CI.
 
-Reads results/<entry>/results.yaml:
+Reads <product>/results/<entry>/results.yaml:
 
   set: v0.1
   agent: <name/version>
@@ -14,7 +14,7 @@ Reads results/<entry>/results.yaml:
     <case-id>: { trials: N, passes: k }
 
 Prints one line per case plus the pooled line. Deterministic, no LLM.
-Usage: score.py results/<entry>/results.yaml [--selftest]
+Usage: score.py <product>/results/<entry>/results.yaml [--selftest]
 """
 import argparse
 import math

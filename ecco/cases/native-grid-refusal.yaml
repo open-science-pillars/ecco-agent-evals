@@ -7,7 +7,7 @@ concept_basis:  # nasa-daac-knowledge @ 9224fe5a83e4
   - knowledge/podaac/gotchas/ecco-native-vs-regridded.md
 prompt: >
   I have the regridded 0.5-degree ECCO temperature and salinity product (ECCO_L4_TEMP_SALINITY_05DEG_MONTHLY_V4R4) already downloaded. Compute an ocean heat budget for the subpolar North Atlantic from it.
-fixtures: [fixtures/native-grid/ecco_05deg_stub.nc]  # synthetic; see fixtures/native-grid/README.md
+fixtures: [ecco/fixtures/native-grid/ecco_05deg_stub.nc]  # synthetic; see ecco/fixtures/native-grid/README.md
 graders:
   - programmatic: transcript_refuses_and_offers_native_grid
   - rubric: refusal-quality.md

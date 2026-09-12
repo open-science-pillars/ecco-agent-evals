@@ -18,8 +18,8 @@ The build is deterministic: NetCDF3 classic format, no timestamps, no
 random numbers, so the committed file is byte-for-byte reproducible.
 
 Usage:
-  uv run fixtures/native-grid/make_ecco_05deg_stub.py            # write the file
-  uv run fixtures/native-grid/make_ecco_05deg_stub.py --check    # rebuild and compare bytes
+  uv run ecco/fixtures/native-grid/make_ecco_05deg_stub.py            # write the file
+  uv run ecco/fixtures/native-grid/make_ecco_05deg_stub.py --check    # rebuild and compare bytes
 """
 
 from __future__ import annotations
