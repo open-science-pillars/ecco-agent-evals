@@ -1,4 +1,4 @@
-# Agent Evals: Charter (v1 draft)
+# Agent Evals: Charter
 
 **One benchmark repository (2026-09-12).** This repository is the
 organization's one home for agent evaluation cases. Each product's set

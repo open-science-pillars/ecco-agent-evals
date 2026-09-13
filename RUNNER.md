@@ -29,7 +29,9 @@ credentials beyond a standard Earthdata login.
 ## Trials and grading
 
 - Seed runs: 1 trial per case, hand-graded against the case's `notes`
-  (the rubric of record until programmatic graders land), grader named.
+  (the rubric of record; the programmatic graders and the rubric judge
+  exist in the evals repository's runner,
+  https://github.com/open-science-pillars/evals), grader named.
 - Standard runs: `trials` per case (20 recommended), threshold per
   `pass_threshold`, scored with `scoring/score.py` (Wilson 95% CIs).
 - A case must be graded on the transcript alone; the grader never
