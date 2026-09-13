@@ -53,7 +53,7 @@ output rather than a case here.
 
 The case schema itself (fields, grader kinds, seed discipline) is
 documented once, in the marketplace's
-[eval authoring guide](https://github.com/open-science-pillars/marketplace/blob/main/docs/eval-authoring-guide.md);
+[testing guide](https://github.com/open-science-pillars/marketplace/blob/main/docs/testing.md);
 this README does not restate it.
 
 ## Layout
@@ -83,9 +83,16 @@ this README does not restate it.
 1. Read `RUNNER.md`, fix your agent configuration, and exclude
    `ecco/cases/` from anything the agent can search.
 2. Run each case's `prompt` verbatim; grade against `notes` (seed) or
-   the programmatic graders (as they land); score with
+   the programmatic graders and rubric judge of the
+   [evals](https://github.com/open-science-pillars/evals) runner; score with
    `uv run scoring/score.py ecco/results/<your-entry>/results.yaml`.
 3. Submit your entry by PR (DCO sign-off; transcripts CC BY 4.0).
+
+The organization's own runs use the runner in the
+[evals repository](https://github.com/open-science-pillars/evals) with
+the manifest `manifests/ocean-science.yaml`; a submitter may use any
+agent, and the protocol in `RUNNER.md` is what makes the entries
+comparable.
 
 Results are comparable only within a tagged set; state the tag.
 

@@ -18,7 +18,9 @@ the traps produce confident wrong answers, not errors.
 
 The bundle-on entry (../2026-08-30-osp-bundle-on/) passes both cases
 under the same prompts. Prior recorded evidence in the OSP design notes
-(design-knowledge-coupling.md, July 2026): the knowledge-coupling POC
+(the knowledge-coupling design note of July 2026, since retired; the
+live rule is the marketplace's docs/knowledge-vs-skills.md): the
+knowledge-coupling POC
 measured mht-basin-scope at 4/5 ON vs 1/5 OFF (+0.60), with
 native-grid-refusal at ceiling in both arms (the hard-refusal floor)
 and geothermal-omission at 5/5 in both arms (the physics is in model
